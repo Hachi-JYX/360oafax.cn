@@ -121,11 +121,12 @@ fieldset[disabled] .navbar-index .btn-link:focus {
   /*当屏幕宽度大于768时执行*/
   #advantager > .carousel-inner >.item {
     height: 449px;
+    width: 100%;
   }
 }
 
 #advantager > .carousel-inner >.item > img {
-  width: 100%;
+  
 }
 
 .title {
@@ -149,13 +150,13 @@ fieldset[disabled] .navbar-index .btn-link:focus {
 }
 
 #info .infodetail {
-  padding-top: 32px;
+  padding-top: 30px;
   font: 15px "微软雅黑";
 }
 
 #info .row {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 #info .infodetail h1 {
@@ -178,3 +179,85 @@ fieldset[disabled] .navbar-index .btn-link:focus {
   color: #FFFFFF;
 }
 
+.zixun {
+  height: 66px;
+  width: 25px;
+  background: url("../img/icon_close.png") no-repeat -40px;
+  position: fixed;
+  right: 0;
+  top: 350px;
+  z-index: 990;
+  cursor: pointer;
+}
+
+.zuxundetail {
+  display: none;
+  width: 147px;
+  height: 119px;
+  position: fixed;
+  right: 0;
+  top: 350px;
+  z-index: 999;
+  background-color: #3290CD ;
+}
+
+.zuxundetail > .content {
+  position: relative;
+}
+
+.zuxundetail > .content > .header {
+  position: relative;
+  width: 147px;
+  height: 70px;
+  background: url('../img/01.jpg') no-repeat;
+  left: 0px;
+  overflow: hidden;
+  display: block;
+  z-index: 1000;
+}
+
+.zuxundetail > .content > .header > .title {
+  width: 90px;
+  height: 30px;
+  background: url("../img/04.png") no-repeat;
+}
+
+.zuxundetail > .content > .connect{
+  height: 40px;
+}
+
+
+.zuxundetail > .content > .connect a {
+  display: block;
+  width: 140px;
+  margin-top: 6px;
+  line-height: 1.5;
+  margin-left: 6px;
+  padding-left: 15px;
+  background-color: #f7bd84;
+  border-radius: 3px;
+}
+
+.icon-con {
+  height: 1px;
+  width: 10px;
+  background: url(http://qiao.baidu.com/v3//img/front/icon.png) -420px -20px;
+}
+
+.zuxundetail > .content > .close {
+  height: 66px;
+  width: 25px;
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  margin-top: -33px;
+  background: url("../img/icon_close.png") no-repeat -120px;
+}
+
+.strong {
+	font-weight: 900;
+}
+
+.myp {
+	text-indent: 2em;
+}
