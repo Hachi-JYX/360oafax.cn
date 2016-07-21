@@ -1,0 +1,43 @@
+.lujindaohang {
+	margin-top: 46px;
+
+}
+
+.lujindaohang > .container > .breadcrumb {
+    margin-bottom: 0;
+    background-color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.end {
+	margin-top: 60px;
+}
+
+.container > h4 {
+	font-size: 20px;
+	margin-top: 25px;
+}
+
+.row h2 {
+	margin-bottom: 30px;
+	color: #1A5291;
+}
+
+.row p {
+	line-height: 22px;
+}
+
+.row img {
+	margin-top: 15px;
+}
+
+.end p {
+	line-height: 35px;
+}
+
+.footer {
+	margin-top: 50px;
+	font-size: 35px;
+	color: #800080;
+	margin-bottom: 100px;
+}

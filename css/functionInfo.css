@@ -1,0 +1,27 @@
+.lujindaohang {
+    margin-top: 46px;
+
+}
+
+.lujindaohang > .container > .breadcrumb {
+    margin-bottom: 0;
+    background-color: #FFFFFF;
+    margin-top: 20px;
+}
+
+#table tbody td {
+    text-align: center;
+}
+
+#table thead th {
+    text-align: center;
+    height:38px;
+    width: 60px;
+}
+
+#table tbody img{
+    width: 25px;
+    height: 20px;
+}
+
+

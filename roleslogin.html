@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>e-Archives文件管理应用模拟体验中心</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/roleslogin.css">
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="js/Utils/base64.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h2>e-Archives文件管理应用模拟体验中心</h2>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <p class="warn">注意：系统只支持IE8.0及以上版本浏览器，建议使用谷歌、火狐等浏览器。</p>
+            <div class="suggestion">
+                <p>点击下列对应的角色即可体验相应的模块功能</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 rleft">
+                    <p class="text-center">Manager（王总）</p>
+                    <p class="text-center">
+                        <img class="sg" src="img/r1.jpg" alt="" onclick="sso('Manager','manager','王总')">
+                    </p>
+                    <p class="text-center">
+                        <img class="bg" src="img/s1.jpg" width="500" height="362" alt="">
+                    </p>
+                </div>
+                <div class="col-md-6 rleft">
+                    <p class="text-center">Lix(李祥)</p>
+                    <p class="text-center">
+                        <img class="sg" src="img/r2.jpg" alt="" onclick="sso('Lix','销售部经理','李祥')">
+                    </p>
+                    <p class="text-center">
+                        <img class="bg" src="img/s2.jpg" width="500" height="362" alt="">
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 rleft">
+                    <p class="text-center">Pengk（彭坤）</p>
+                    <p class="text-center">
+                        <img class="sg" src="img/r3.jpg" alt="" onclick="sso('Pengk','销售部员工','彭坤')">
+                    </p>
+                    <p class="text-center">
+                        <img class="bg" src="img/s3.jpg" width="500" height="362" alt="">
+                    </p>
+                </div>
+                <div class="col-md-6 rleft">
+                    <p class="text-center">王哲</p>
+                    <p class="text-center">
+                        <img class="sg" src="img/r4.jpg" alt="" onclick="document.location='http://mdoc.360oafax.cn/sso/slink.ashx?ID=jaVigRTueXPAq6MC4zRH3WhPw7%2b864iRwKICBpy01AEZ6i8rbXhpzyUkbLXUl%2bSH'">
+                    </p>
+                    <p class="text-center">
+                        <img class="bg" src="img/s4.jpg" width="500" height="362" alt="">
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 rleft">
+                    <p class="text-center">ADMIN</p>
+                    <p class="text-center">
+                        <img class="sg" src="img/r5.jpg" alt="" onclick="">
+                    </p>
+                    <p class="text-center">
+                        <img class="bg" src="img/s5.jpg" width="500" height="362" alt="">
+                    </p>
+                </div>
+                <div class="col-md-6">
+                </div>
+            </div>
+
+            <h3 class="beizhu">备注</h3>
+            <div class="info">
+                <p>1、我的工作台是任何登陆用户都可以使用的一个工作台，拥有设立、删除文件夹及文件权限，不受限制的上传下载文件及文件夹，可以使用团队管理、分享、在线编辑文档等功能。为节约资源，禁止上传超过50M的文件及文件夹。</p>
+                <img src="img/s6.jpg" width="100%" alt="">
+                <p>2、所有用户的公司文档使用授权如下。</p>
+                <img src="img/s7.jpg" width="100%" alt="">
+                <p>3、如果想更多了解系统功能，请参阅系统文件：</p>
+                <img src="img/s8.jpg" width="100%" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--脚注开始-->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Copyright © 2013 HongZuo.All Rights Reserved　邮箱：admin@hongzuo.com.cn</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--脚注结束-->
+
+    <script >
+        var xmlHttp;
+        function sso(userid,role,name) {
+            xmlHttp = new XMLHttpRequest();
+            /* 创建 XMLHttpRequest 对象
+             if (window.XMLHttpRequest) {
+             // code for IE7+, Firefox, Chrome, Opera, Safari
+             xmlhttp = new XMLHttpRequest();
+             } else {// code for IE6, IE5
+             xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+             }*/
+            // -----------ajax方法-----------//
+            if (xmlHttp == null) {
+                alert('您的浏览器不支持AJAX！');
+                return;
+            }
+            var url = "sso/prepareKey.ashx";
+            xmlHttp.onreadystatechange = function () {
+                if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+                {
+                    var d = decode64(xmlHttp.responseText);
+                    document.location = "sso/slogin.aspx?userAccount=" + userid + "&companyID=jysdemo" + "&sign=" + d + "&userRoleName=" + role + "&UserName="+name;
+                } //favorOK;//发送事件后，收到信息了调用函数
+            }
+            xmlHttp.open("GET", url, true);
+            xmlHttp.send();
+            //   alert(userid);
+            //     var d = xmlHttp.responseText;
+            //   alert(d);
+            // 处理返回结果
+            location.href = "http://mdoc.360oafax.cn/index.html";
+        }
+    </script>
+
+</body>
+</html>

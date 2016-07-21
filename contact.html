@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>联系我们-e-Archives数据管理云系统</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/download.css">
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--头部导航开始-->
+    <header id="header">
+        <nav class="navbar navbar-index navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">切换菜单</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo2.jpg" />
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="index.html">首页</a>
+                        </li>
+                        <li>
+                            <a href="functionInfo.html">功能介绍</a>
+                        </li>
+                        <li>
+                            <a href="anliinfo.html">应用案例</a>
+                        </li>
+                        <li>
+                            <a href="lianmenghezuo.html">联盟合作</a>
+                        </li>
+                        <li>
+                            <a href="chanpingjiage.html">产品价格</a>
+                        </li>
+                        <li class="hidden-sm">
+                            <a href="helper.html">帮助</a>
+                        </li>
+                        <li class="active hidden-sm">
+                            <a href="contact.html">联系我们</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-phone-alt"></i> 4006219699
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right visible-lg">
+                        <li>
+                            <button id="go" type="button" class="btn btn-danger">体验demo</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target=".regist">登录</button>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <!--头部导航结束-->
+
+    <!--路径导航-->
+    <div class="lujindaohang">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="index.html">首页</a>
+                </li>
+                <li class="active">联系我们</li>
+            </ol>
+        </div>
+    </div>
+    <hr />
+    <div class="mycontent">
+        <div class="container">
+            <h3>业务咨询</h3>
+            <p>derrick_zhang@hotmail.com（张经理）</p>
+            <p>zhangdun@hongzuo.com.cn</p>
+
+
+            <h3>联系方式</h3>
+            <p>电话：+86-021-59513890</p>
+            <p>手机：13122381326</p>
+            <p>地址：上海市闵行区剑川路951号沧源科技园A楼608室</p>
+            <p>邮编：200240</p>
+
+        </div>
+    </div>
+    <!--脚注开始-->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Copyright © 2013 HongZuo.All Rights Reserved　邮箱：admin@hongzuo.com.cn</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--脚注结束-->
+    <!--模态框开始-->
+    <div class="modal fade regist" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">注册/登入</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#regist" aria-controls="regist" role="tab" data-toggle="tab">注册</a></li>
+                            <li role="presentation"><a href="#login" aria-controls="login" role="tab" data-toggle="tab">登入</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="regist">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="CompanyId">企业名称:</label>
+                                        <input type="number" class="form-control" id="reCompanyName" placeholder="企业名称">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="userId">管理员邮箱:</label>
+                                        <input type="text" class="form-control" id="reAdminEmail" placeholder="管理员邮箱">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">密码：</label>
+                                        <input type="password" class="form-control" placeholder="请输入密码" id="rePassword" >
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">联系人：</label>
+                                        <input type="password" class="form-control" placeholder="联系人" id="reAssocitaton" >
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">手机号码：</label>
+                                        <input type="password" class="form-control" placeholder="手机号码" id="reTel" >
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">验证码：</label>
+                                        <input type="text" class="form-control" placeholder="验证码" id="reVal" >
+                                        <label>4D32</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-info">立即注册 </button>
+                                </form>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="login">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="CompanyId">请输入公司代码:</label>
+                                        <input type="number" class="form-control" id="companyId" placeholder="请输入公司代码">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="userId">请输入用户名或者ID:</label>
+                                        <input type="text" class="form-control" id="userId" placeholder="请输入用户名或者ID:">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">密码：</label>
+                                        <input type="password" class="form-control" placeholder="请输入密码" id="password" >
+                                    </div>
+                                    <button type="submit" class="btn btn-info">立即登录</button>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="roleslogin.html">体验demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--模态框结束-->
+
+    <script>
+        $('#go').click(function () {
+            location.href = 'roleslogin.html';
+        });
+    </script>
+</body>
+</html>

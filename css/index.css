@@ -1,0 +1,284 @@
+.navbar-index .navbar-brand {
+	padding: 10px 15px;
+}
+
+.navbar-index .navbar-nav {
+	margin-left: 35px;
+}
+
+.navbar-index {
+  background-color: #1C5BA0;
+  border-color: #e7e7e7;
+}
+.navbar-index .navbar-brand {
+  color: #777;
+  width: 206px;
+  height: 30px;
+}
+.navbar-index .navbar-brand:hover,
+.navbar-index .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+.navbar-index .navbar-text {
+  color: #777;
+}
+.navbar-index .navbar-nav > li > a {
+	padding: 0 15px;
+	line-height: 48px;
+    color: #FFFFFF;
+}
+.navbar-index .navbar-nav > li > a:hover,
+.navbar-index .navbar-nav > li > a:focus {
+  color: #FFFFFF;
+  background-color: #1A5291;
+}
+.navbar-index .navbar-nav > .active > a,
+.navbar-index .navbar-nav > .active > a:hover,
+.navbar-index .navbar-nav > .active > a:focus {
+  color: #FFFFFF;
+  background-color: #1A5291;
+}
+.navbar-index .navbar-nav > .disabled > a,
+.navbar-index .navbar-nav > .disabled > a:hover,
+.navbar-index .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.navbar-index .navbar-toggle {
+  border-color: #ddd;
+  margin-top: 15px;
+}
+.navbar-index .navbar-toggle:hover,
+.navbar-index .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.navbar-index .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.navbar-index .navbar-collapse,
+.navbar-index .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-index .navbar-nav > .open > a,
+.navbar-index .navbar-nav > .open > a:hover,
+.navbar-index .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+  .navbar-index .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .navbar-index .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-index .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .navbar-index .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-index .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #FFFFFF;
+    background-color: #e7e7e7;
+  }
+  .navbar-index .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-index .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-index .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.navbar-index .navbar-link {
+  color: #777;
+}
+.navbar-index .navbar-link:hover {
+  color: #333;
+}
+.navbar-index .btn-link {
+  color: #777;
+}
+.navbar-index .btn-link:hover,
+.navbar-index .btn-link:focus {
+  color: #333;
+}
+.navbar-index .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-index .btn-link:hover,
+.navbar-index .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-index .btn-link:focus {
+  color: #ccc;
+}
+
+#bs-example-navbar-collapse-1 {
+}
+
+#advantager {
+	margin-top: 30px;
+}
+
+#advantager > .carousel-inner >.item {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  /*当屏幕宽度大于768时执行*/
+  #advantager > .carousel-inner >.item {
+    height: 449px;
+    width: 100%;
+  }
+}
+
+#advantager > .carousel-inner >.item > img {
+  
+}
+
+.title {
+  background: url('../img/title-line-bg.png') 50% 50% no-repeat;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.title span {
+  display: inline-block;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.title span span {
+  color: #3692d4;
+  display: inline;
+  padding: 0;
+}
+
+#info .infodetail {
+  padding-top: 30px;
+  font: 15px "微软雅黑";
+}
+
+#info .row {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+#info .infodetail h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#info .infodetail p {
+  text-align: center;
+  font: 15px/20px "宋体","微软雅黑";
+}
+
+#info .infodetail img {
+  margin-top: 20px;
+}
+
+#footer {
+  height: 100px;;
+  background-color: #3c3c3c;
+}
+
+#footer p {
+  line-height: 100px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.zixun {
+  height: 66px;
+  width: 25px;
+  background: url("../img/icon_close.png") no-repeat -40px;
+  position: fixed;
+  right: 0;
+  top: 350px;
+  z-index: 990;
+  cursor: pointer;
+}
+
+.zuxundetail {
+  display: none;
+  width: 147px;
+  height: 119px;
+  position: fixed;
+  right: 0;
+  top: 350px;
+  z-index: 999;
+  background-color: #3290CD ;
+}
+
+.zuxundetail > .content {
+  position: relative;
+}
+
+.zuxundetail > .content > .header {
+  position: relative;
+  width: 147px;
+  height: 70px;
+  background: url('../img/01.jpg') no-repeat;
+  left: 0px;
+  overflow: hidden;
+  display: block;
+  z-index: 1000;
+}
+
+.zuxundetail > .content > .header > .title {
+  width: 90px;
+  height: 30px;
+  background: url("../img/04.png") no-repeat;
+}
+
+.zuxundetail > .content > .connect{
+  height: 40px;
+}
+
+
+.zuxundetail > .content > .connect a {
+  display: block;
+  width: 140px;
+  margin-top: 6px;
+  line-height: 1.5;
+  margin-left: 6px;
+  padding-left: 15px;
+  background-color: #f7bd84;
+  border-radius: 3px;
+}
+
+.icon-con {
+  height: 1px;
+  width: 10px;
+  background: url(http://qiao.baidu.com/v3//img/front/icon.png) -420px -20px;
+}
+
+.zuxundetail > .content > .close {
+  height: 66px;
+  width: 25px;
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  margin-top: -33px;
+  background: url("../img/icon_close.png") no-repeat -120px;
+}
+
+.strong {
+	font-weight: 900;
+}
+
+.myp {
+	text-indent: 2em;
+}
+
+#footer {
+  margin-top: 30px;
+}
+
+div.navbar-header > a > img {
+  height: 30px;
+}
+
+ul.nav.navbar-nav.navbar-right.visible-lg button {
+  margin-left: 8px;
+  margin-top: 6px;
+}

@@ -1,0 +1,72 @@
+.header {
+
+    background: url("../img/lbg.jpg") no-repeat;
+}
+
+.header > .container > h2 {
+    color: #FFFFFF;
+    line-height: 50px;
+    padding-bottom: 10px;
+}
+
+.warn {
+    color: #ff0000;
+    margin-top: 50px;
+    font-weight: 900;
+    font: 12px "微软雅黑";
+}
+
+.suggestion {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background-color: #3162AF;
+}
+
+.suggestion > p {
+    padding-left: 20px;
+    color: #FFFFFF;
+    font: 14px/40px "微软雅黑";
+}
+
+.rleft {
+    margin-top: 20px;
+}
+
+.sg {
+    cursor: pointer;
+}
+
+.content .row {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cccccc;
+}
+
+@media (max-width: 520px) {
+    img.bg{
+        width: 100%;
+    }
+}
+
+.beizhu {
+    color: #ff0000;
+    font-weight: 800;
+}
+
+.info p {
+    margin: 20px 0;
+    font: 16px/32px "微软雅黑";
+}
+
+#footer {
+    margin-top: 60px;
+    height: 100px;;
+    background-color: #3c3c3c;
+}
+
+#footer p {
+    line-height: 100px;
+    text-align: center;
+    color: #FFFFFF;
+}
