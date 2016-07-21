@@ -33,6 +33,13 @@
 
 .end p {
 	line-height: 35px;
+	font:16px "微软雅黑";
+	font-weight: 800;
+}
+
+.strong {
+	font:16px "微软雅黑";
+	font-weight: 800;
 }
 
 .footer {
